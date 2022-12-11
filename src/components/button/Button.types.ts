@@ -10,4 +10,5 @@ export interface ButtonTypes {
   display?: Display;
   padding?: string;
   radius?: string;
+  shadow?: string;
 }

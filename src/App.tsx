@@ -5,15 +5,16 @@ function App() {
   return (
     <div className="App">
       <ButtonComponent
-        text="Tekst przycisku"
+        text="This is universal button"
         display="block"
         bgColor="blue"
         fontFamily="Verdana, sans-serif"
         fontColor="#CCC"
-        border="1px solid red"
+        border="none"
         isUppercase
         padding="10px 30px"
         radius="8px 3px 18px 29px"
+        shadow="2px 2px 5px 0px rgba(0,0,0,.5)"
       />
     </div>
   );

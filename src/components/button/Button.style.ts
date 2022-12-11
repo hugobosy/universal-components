@@ -19,31 +19,37 @@ const displays = {
 export const Button = styled.button<Partial<ButtonTypes>>`
   cursor: pointer;
   ${({ display }) => display && displays[display]};
+
   ${({ bgColor }) =>
     bgColor &&
     css`
       background-color: ${bgColor};
     `};
+
   ${({ fontFamily }) =>
     fontFamily &&
     css`
       font-family: ${fontFamily};
     `};
+
   ${({ fontColor }) =>
     fontColor &&
     css`
       color: ${fontColor};
     `};
+
   ${({ border }) =>
     border &&
     css`
       border: ${border};
     `};
+
   ${({ isUppercase }) =>
     isUppercase &&
     css`
       text-transform: uppercase;
     `};
+
   ${({ padding }) =>
     padding &&
     css`
@@ -54,5 +60,11 @@ export const Button = styled.button<Partial<ButtonTypes>>`
     radius &&
     css`
       border-radius: ${radius};
-    `}
+    `};
+
+  ${({ shadow }) =>
+    shadow &&
+    css`
+      box-shadow: ${shadow};
+    `};
 `;
