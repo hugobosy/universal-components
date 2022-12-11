@@ -13,6 +13,8 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   padding,
   radius,
   shadow,
+  transition,
+  hover,
 }) => {
   return (
     <Button
@@ -25,6 +27,8 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
       padding={padding}
       radius={radius}
       shadow={shadow}
+      transition={transition}
+      hover={hover}
     >
       {text}
     </Button>

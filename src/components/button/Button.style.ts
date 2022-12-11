@@ -67,4 +67,22 @@ export const Button = styled.button<Partial<ButtonTypes>>`
     css`
       box-shadow: ${shadow};
     `};
+
+  ${({ transition }) =>
+    transition &&
+    css`
+      transition: ${transition}s;
+    `};
+
+  ${({ hover }) =>
+    hover &&
+    css`
+      &:hover {
+        background-color: ${hover.bgColor};
+        color: ${hover.fontColor};
+        padding: ${hover.padding};
+        border-radius: ${hover.radius};
+        box-shadow: ${hover.shadow};
+      }
+    `}
 `;

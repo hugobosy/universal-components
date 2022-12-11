@@ -1,5 +1,13 @@
 type Display = "block" | "flex" | "grid" | "none";
 
+interface Hover {
+  bgColor?: string;
+  fontColor?: string;
+  padding?: string;
+  radius?: string;
+  shadow?: string;
+}
+
 export interface ButtonTypes {
   text: string;
   bgColor?: string;
@@ -11,4 +19,6 @@ export interface ButtonTypes {
   padding?: string;
   radius?: string;
   shadow?: string;
+  transition?: number;
+  hover?: Hover;
 }
