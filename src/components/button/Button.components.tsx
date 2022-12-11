@@ -11,6 +11,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   border,
   isUppercase,
   padding,
+  radius,
 }) => {
   return (
     <Button
@@ -21,6 +22,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
       border={border}
       isUppercase={isUppercase}
       padding={padding}
+      radius={radius}
     >
       {text}
     </Button>

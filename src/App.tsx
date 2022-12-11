@@ -13,6 +13,7 @@ function App() {
         border="1px solid red"
         isUppercase
         padding="10px 30px"
+        radius="8px 3px 18px 29px"
       />
     </div>
   );

@@ -9,4 +9,5 @@ export interface ButtonTypes {
   isUppercase?: boolean;
   display?: Display;
   padding?: string;
+  radius?: string;
 }

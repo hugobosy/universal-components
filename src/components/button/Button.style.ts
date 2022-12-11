@@ -17,6 +17,7 @@ const displays = {
 };
 
 export const Button = styled.button<Partial<ButtonTypes>>`
+  cursor: pointer;
   ${({ display }) => display && displays[display]};
   ${({ bgColor }) =>
     bgColor &&
@@ -48,4 +49,10 @@ export const Button = styled.button<Partial<ButtonTypes>>`
     css`
       padding: ${padding};
     `};
+
+  ${({ radius }) =>
+    radius &&
+    css`
+      border-radius: ${radius};
+    `}
 `;
