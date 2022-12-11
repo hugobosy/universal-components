@@ -8,7 +8,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   fontColor,
   bgColor,
   display,
-  isBorder,
+  border,
   isUppercase,
 }) => {
   return (
@@ -17,7 +17,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
       fontFamily={fontFamily}
       fontColor={fontColor}
       bgColor={bgColor}
-      isBorder={isBorder}
+      border={border}
       isUppercase={isUppercase}
     >
       {text}

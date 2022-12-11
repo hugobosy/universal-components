@@ -15,6 +15,32 @@ const displays = {
     display: none;
   `,
 };
+
 export const Button = styled.button<Partial<ButtonTypes>>`
   ${({ display }) => display && displays[display]};
+  ${({ bgColor }) =>
+    bgColor &&
+    css`
+      background-color: ${bgColor};
+    `};
+  ${({ fontFamily }) =>
+    fontFamily &&
+    css`
+      font-family: ${fontFamily};
+    `};
+  ${({ fontColor }) =>
+    fontColor &&
+    css`
+      color: ${fontColor};
+    `};
+  ${({ border }) =>
+    border &&
+    css`
+      border: ${border};
+    `};
+  ${({ isUppercase }) =>
+    isUppercase &&
+    css`
+      text-transform: uppercase;
+    `};
 `;

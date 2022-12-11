@@ -5,7 +5,7 @@ export interface ButtonTypes {
   bgColor?: string;
   fontFamily?: string;
   fontColor?: string;
-  isBorder?: boolean;
+  border?: string;
   isUppercase?: boolean;
   display?: Display;
 }
