@@ -8,4 +8,5 @@ export interface ButtonTypes {
   border?: string;
   isUppercase?: boolean;
   display?: Display;
+  padding?: string;
 }

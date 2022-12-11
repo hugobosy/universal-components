@@ -12,6 +12,7 @@ function App() {
         fontColor="#CCC"
         border="1px solid red"
         isUppercase
+        padding="10px 30px"
       />
     </div>
   );

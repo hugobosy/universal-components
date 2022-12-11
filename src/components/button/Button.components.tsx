@@ -10,6 +10,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   display,
   border,
   isUppercase,
+  padding,
 }) => {
   return (
     <Button
@@ -19,6 +20,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
       bgColor={bgColor}
       border={border}
       isUppercase={isUppercase}
+      padding={padding}
     >
       {text}
     </Button>

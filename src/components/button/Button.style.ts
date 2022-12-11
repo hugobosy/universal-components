@@ -43,4 +43,9 @@ export const Button = styled.button<Partial<ButtonTypes>>`
     css`
       text-transform: uppercase;
     `};
+  ${({ padding }) =>
+    padding &&
+    css`
+      padding: ${padding};
+    `};
 `;
