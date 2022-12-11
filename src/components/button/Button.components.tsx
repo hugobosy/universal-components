@@ -11,5 +11,16 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   isBorder,
   isUppercase,
 }) => {
-  return <Button>{text}</Button>;
+  return (
+    <Button
+      display={display}
+      fontFamily={fontFamily}
+      fontColor={fontColor}
+      bgColor={bgColor}
+      isBorder={isBorder}
+      isUppercase={isUppercase}
+    >
+      {text}
+    </Button>
+  );
 };
