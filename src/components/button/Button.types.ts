@@ -21,4 +21,5 @@ export interface ButtonTypes {
   shadow?: string;
   transition?: number;
   hover?: Hover;
+  onClick: () => void;
 }

@@ -2,6 +2,9 @@ import React from "react";
 import { ButtonComponent } from "./components/button/Button.components";
 
 function App() {
+  const exampleHandleFunction = () => {
+    console.log("Click");
+  };
   return (
     <div className="App">
       <ButtonComponent
@@ -23,6 +26,7 @@ function App() {
           shadow: "5px 5px 10px rgba(0,0,0,1)",
           padding: "20px 50px",
         }}
+        onClick={exampleHandleFunction}
       />
     </div>
   );
