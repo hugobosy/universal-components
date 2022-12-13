@@ -1,5 +1,6 @@
 `React` `Styled-components` `TypeScript`
 # Uniwersalne komponenty React
+### Paczka będzie na bieżąco rozwijana o nowe właściwości dla każdego z komponentów
 
 1. [Button](##Button)
 
