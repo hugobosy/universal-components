@@ -8,8 +8,31 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   fontColor,
   bgColor,
   display,
-  isBorder,
+  border,
   isUppercase,
+  padding,
+  radius,
+  shadow,
+  transition,
+  hover,
+  onClick,
 }) => {
-  return <Button>{text}</Button>;
+  return (
+    <Button
+      display={display}
+      fontFamily={fontFamily}
+      fontColor={fontColor}
+      bgColor={bgColor}
+      border={border}
+      isUppercase={isUppercase}
+      padding={padding}
+      radius={radius}
+      shadow={shadow}
+      transition={transition}
+      hover={hover}
+      onClick={() => onClick()}
+    >
+      {text}
+    </Button>
+  );
 };
