@@ -26,7 +26,7 @@
     - `padding` -> zmiana paddingów
     - `radius` -> zmiana zaokrągleń rogów
     - `shadow` -> zmiana cieni
-
+- `onClick` -> obsługa zdarzenia click
 ## Przykładowy sposób użycia:
 
 ```
@@ -48,6 +48,7 @@ bgColor: "#000",
 radius: "3px 2px 3px 3px",
 shadow: "5px 5px 10px rgba(0,0,0,1)",
 padding: "20px 50px",
+onClick={exampleHandleFunction}
 }}
 />
 ```
