@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper } from "./Parallax.styles";
+import { Parallax } from "./Parallax.styles";
 import { ParallaxTypes } from "./Parallax.types";
 
 export const ParallaxComponent: React.FC<ParallaxTypes> = ({
@@ -9,5 +9,9 @@ export const ParallaxComponent: React.FC<ParallaxTypes> = ({
   isOverlay,
   image,
 }) => {
-  return <Wrapper></Wrapper>;
+  return (
+    <Parallax width={width} height={height} isOverlay={isOverlay} image={image}>
+      {children}
+    </Parallax>
+  );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonComponent } from "./components/button/Button.components";
 import { ParallaxComponent } from "./components/parallax/Parallax.component";
+import "./App.css";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -29,7 +30,12 @@ function App() {
         }}
         onClick={exampleHandleFunction}
       />
-      <ParallaxComponent />
+      <ParallaxComponent
+        width="100%"
+        height="400px"
+        isOverlay={{ bgColor: "#000", opacity: 0.5 }}
+        image="https://cdn.pixabay.com/photo/2018/12/13/22/34/nots-3873894__480.jpg"
+      />
     </div>
   );
 }

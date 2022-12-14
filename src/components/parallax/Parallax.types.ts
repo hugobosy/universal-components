@@ -6,7 +6,7 @@ interface Overlay {
 export interface ParallaxTypes {
   width?: string;
   height?: string;
-  children: JSX.Element;
+  children?: JSX.Element;
   isOverlay?: Overlay;
-  image: string;
+  image?: string;
 }
