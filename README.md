@@ -1,14 +1,17 @@
 `React` `Styled-components` `TypeScript`
+
 # Uniwersalne komponenty React
+
 ### Paczka będzie na bieżąco rozwijana o nowe właściwości dla każdego z komponentów
 
-1. [Button](##Button)
+1. [Button](#Button)
+2. [Parallax](#Parallax)
 
 ---
 
 ## Button
 
->Właściwości, które posiada komponent:
+> Właściwości, które posiada komponent:
 
 - `text` -> wyświetla tekst na buttonie (required)
 - `bgColor`-> tło przycisku
@@ -28,6 +31,7 @@
     - `radius` -> zmiana zaokrągleń rogów
     - `shadow` -> zmiana cieni
 - `onClick` -> obsługa zdarzenia click
+
 ## Przykładowy sposób użycia:
 
 ```
@@ -53,6 +57,34 @@ hover={{
 }}
 />
 ```
+
+---
+
+## Parallax
+
+> Właściwości, które posiada komponent:
+
+- `width` -> szerokość
+- `height` -> wysokość
+- `IsOverlay` -> czy ma być nakładka
+    - `bgColor` -> kolor nakładki
+    - `opacity` -> przezroczystość koloru nakładki
+- `image` -> obrazek tła
+
+## Przykładowy sposób użycia:
+
+```
+<ParallaxComponent
+ width="100%"
+ height="400px"
+ isOverlay={{ 
+    bgColor: "#000", 
+    opacity: 0.5 
+ }}
+ image="https://cdn.pixabay.com/photo/2018/12/13/22/34/nots-3873894__480.jpg"
+/>
+```
+
 ---
 
 [MIT](https://choosealicense.com/licenses/mit/)
