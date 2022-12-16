@@ -149,4 +149,44 @@
 
 ---
 
+## Socials
+
+> Właściwości, które posiada komponent:
+
+- `facebook`, `twitter`, `instagram`, `linkedin`, `pinterest`, `youtube` -> nazwy social mediów
+  - `icon` -> element JSX - komponent ikony
+  - `href` -> adres do social media
+- `size` -> wielkość ikony
+- `transition` -> czas przejścia na stan hover
+- `hover` -> stan przejścia
+  - `fill` -> zmiana koloru ikony
+
+## Przykładowy sposób użycia:
+
+```
+<SocialsComponent
+  facebook={{
+    icon: <FaFacebookF />,
+    href: "http://facebook.com",
+  }}
+  twitter={{
+    icon: <FaTwitter />,
+    href: "http://twitter.com",
+  }}
+  instagram={{
+    icon: <FaInstagram />,
+    href: "http://instagram.com",
+  }}
+  linkedin={{
+    icon: <FaLinkedinIn />,
+    href: "http://linkedin.com",
+  }}
+  size={media ? 25 : 15}
+  hover={{ fill: "gold" }}
+  transition={0.4}
+/>
+```
+
+---
+
 [MIT](https://choosealicense.com/licenses/mit/)
