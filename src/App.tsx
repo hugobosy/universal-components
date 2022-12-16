@@ -3,11 +3,22 @@ import { ButtonComponent } from "./components/button/Button.components";
 import { ParallaxComponent } from "./components/parallax/Parallax.component";
 import "./App.css";
 import { LinkComponent } from "./components/link/Link.component";
+import { SocialsComponent } from "./components/socials/Socials.component";
+import useMediaQuery from "./helpers/hooks/media-query";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 
 function App() {
   const exampleHandleFunction = () => {
     console.log("Click");
   };
+
+  const media = useMediaQuery("(min-width: 768px)");
+
   return (
     <div className="App">
       <ButtonComponent
@@ -65,6 +76,28 @@ function App() {
           fontWeight: 400,
           textShadow: "0 0 20px red",
         }}
+      />
+
+      <SocialsComponent
+        facebook={{
+          icon: <FaFacebookF />,
+          href: "http://facebook.com",
+        }}
+        twitter={{
+          icon: <FaTwitter />,
+          href: "http://twitter.com",
+        }}
+        instagram={{
+          icon: <FaInstagram />,
+          href: "http://instagram.com",
+        }}
+        linkedin={{
+          icon: <FaLinkedinIn />,
+          href: "http://linkedin.com",
+        }}
+        size={media ? 25 : 15}
+        hover={{ fill: "gold" }}
+        transition={0.4}
       />
     </div>
   );
