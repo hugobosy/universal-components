@@ -4,11 +4,15 @@ import { ParallaxComponent } from "./components/parallax/Parallax.component";
 import "./App.css";
 import { LinkComponent } from "./components/link/Link.component";
 import { SocialsComponent } from "./components/socials/Socials.component";
+import useMediaQuery from "./helpers/hooks/media-query";
 
 function App() {
   const exampleHandleFunction = () => {
     console.log("Click");
   };
+
+  const media = useMediaQuery("(min-width: 768px)");
+
   return (
     <div className="App">
       <ButtonComponent
@@ -68,7 +72,13 @@ function App() {
         }}
       />
 
-      <SocialsComponent facebook twitter instagram linkedin size={25} />
+      <SocialsComponent
+        facebook
+        twitter
+        instagram
+        linkedin
+        size={media ? 25 : 15}
+      />
     </div>
   );
 }
