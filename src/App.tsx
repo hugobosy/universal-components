@@ -3,6 +3,7 @@ import { ButtonComponent } from "./components/button/Button.components";
 import { ParallaxComponent } from "./components/parallax/Parallax.component";
 import "./App.css";
 import { LinkComponent } from "./components/link/Link.component";
+import { SocialsComponent } from "./components/socials/Socials.component";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -66,6 +67,8 @@ function App() {
           textShadow: "0 0 20px red",
         }}
       />
+
+      <SocialsComponent facebook twitter instagram linkedin size={25} />
     </div>
   );
 }
