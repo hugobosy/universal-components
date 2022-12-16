@@ -75,14 +75,15 @@ hover={{
 
 ```
 <ParallaxComponent
- width="100%"
- height="400px"
- isOverlay={{ 
-    bgColor: "#000", 
-    opacity: 0.5 
- }}
- image="https://cdn.pixabay.com/photo/2018/12/13/22/34/nots-3873894__480.jpg"
-/>
+  width="100%"
+  height="400px"
+  isOverlay={{ bgColor: "#000", opacity: 0.5 }}
+  image="https://cdn.pixabay.com/photo/2018/12/13/22/34/nots-3873894__480.jpg"
+  >
+    <div>
+      <h1>Parallax</h1>
+    </div>
+</ParallaxComponent>
 ```
 
 ---
