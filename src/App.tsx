@@ -55,6 +55,8 @@ function App() {
         border="2px solid blue"
         textAlign="center"
         radius="30px 5px 10px 20px"
+        bgColor="#777"
+        textShadow="0 0 3px rgba(0,0,0,1)"
       />
     </div>
   );

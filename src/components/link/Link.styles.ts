@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { LinkTypes } from "./Link.types";
+import { text } from "stream/consumers";
 
 const Aligns = {
   left: css`
@@ -76,5 +77,10 @@ export const Link = styled.a<Partial<LinkTypes>>`
     radius &&
     css`
       border-radius: ${radius};
+    `};
+  ${({ textShadow }) =>
+    textShadow &&
+    css`
+      text-shadow: ${textShadow};
     `};
 `;

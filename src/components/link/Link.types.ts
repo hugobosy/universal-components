@@ -19,4 +19,5 @@ export interface LinkTypes {
   transition?: number;
   radius?: string;
   textAlign?: Align;
+  textShadow?: string;
 }

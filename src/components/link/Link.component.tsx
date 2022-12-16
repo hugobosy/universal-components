@@ -19,6 +19,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
   transition,
   textAlign,
   radius,
+  textShadow,
 }) => {
   return (
     <Link
@@ -37,6 +38,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
       transition={transition}
       textAlign={textAlign}
       radius={radius}
+      textShadow={textShadow}
     >
       {text}
     </Link>
