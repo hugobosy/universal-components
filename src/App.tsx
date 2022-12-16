@@ -48,7 +48,7 @@ function App() {
         fontFamily="Verdana, sans-serif"
         fontColor="#567567"
         isUppercase
-        fontBold={700}
+        fontWeight={700}
         isItalic
         padding="10px 30px"
         transition={0.4}
@@ -57,6 +57,14 @@ function App() {
         radius="30px 5px 10px 20px"
         bgColor="#777"
         textShadow="0 0 3px rgba(0,0,0,1)"
+        hover={{
+          bgColor: "#CCC",
+          border: "1px solid red",
+          radius: "2px 5px 8px 30px",
+          isUnderline: true,
+          fontWeight: 400,
+          textShadow: "0 0 20px red",
+        }}
       />
     </div>
   );

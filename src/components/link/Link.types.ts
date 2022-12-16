@@ -1,6 +1,13 @@
 type Align = "left" | "center" | "right";
 
-interface Hover {}
+interface Hover {
+  bgColor?: string;
+  fontWeight?: number;
+  radius?: string;
+  isUnderline?: boolean;
+  border?: string;
+  textShadow?: string;
+}
 
 export interface LinkTypes {
   href: string;
@@ -11,7 +18,7 @@ export interface LinkTypes {
   isUppercase?: boolean;
   isUnderline?: boolean;
   hover?: Hover;
-  fontBold?: number;
+  fontWeight?: number;
   isItalic?: boolean;
   padding?: string;
   border?: string;

@@ -11,7 +11,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
   isUppercase,
   isUnderline,
   hover,
-  fontBold,
+  fontWeight,
   isItalic,
   padding,
   bgColor,
@@ -30,7 +30,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
       isUppercase={isUppercase}
       isUnderline={isUnderline}
       hover={hover}
-      fontBold={fontBold}
+      fontWeight={fontWeight}
       isItalic={isItalic}
       padding={padding}
       bgColor={bgColor}

@@ -43,10 +43,10 @@ export const Link = styled.a<Partial<LinkTypes>>`
     css`
       text-decoration: underline;
     `};
-  ${({ fontBold }) =>
-    fontBold &&
+  ${({ fontWeight }) =>
+    fontWeight &&
     css`
-      font-weight: ${fontBold};
+      font-weight: ${fontWeight};
     `};
   ${({ isItalic }) =>
     isItalic &&
@@ -82,5 +82,20 @@ export const Link = styled.a<Partial<LinkTypes>>`
     textShadow &&
     css`
       text-shadow: ${textShadow};
+    `};
+  ${({ hover }) =>
+    hover &&
+    css`
+      &:hover {
+        background-color: ${hover.bgColor};
+        font-weight: ${hover.fontWeight};
+        border-radius: ${hover.radius};
+        ${hover.isUnderline &&
+        css`
+          text-decoration: underline;
+        `};
+        border: ${hover.border};
+        text-shadow: ${hover.textShadow};
+      }
     `};
 `;
