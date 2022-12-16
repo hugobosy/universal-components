@@ -96,6 +96,8 @@ function App() {
           href: "http://linkedin.com",
         }}
         size={media ? 25 : 15}
+        hover={{ fill: "gold" }}
+        transition={0.4}
       />
     </div>
   );

@@ -2,6 +2,10 @@ interface Social {
   icon: JSX.Element;
   href: string;
 }
+
+interface Hover {
+  fill?: string;
+}
 export interface SocialsTypes {
   facebook?: Social;
   twitter?: Social;
@@ -10,4 +14,6 @@ export interface SocialsTypes {
   pinterest?: Social;
   youtube?: Social;
   size?: number;
+  hover?: Hover;
+  transition?: number;
 }
