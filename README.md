@@ -7,6 +7,7 @@
 1. [Button](#Button)
 2. [Parallax](#Parallax)
 3. [Link](#Link)
+4. [Socials](#Socials)
 
 ---
 
