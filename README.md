@@ -6,6 +6,7 @@
 
 1. [Button](#Button)
 2. [Parallax](#Parallax)
+3. [Link](#Link)
 
 ---
 
@@ -84,6 +85,66 @@ hover={{
      <h1>Parallax</h1>
    </div>
 </ParallaxComponent>
+```
+
+---
+
+## Link
+
+> Właściwości, które posiada komponent:
+
+- `href` -> adres linku do strony
+- `text` -> tekst linku
+- `width` -> szerokość linku (link posiada display: block);
+- `fontFamily` -> rodzaj czcionki linku
+- `fontColor` -> kolor czcionki linku
+- `isUppercase` -> czy tekst ma być wielkimi literami
+- `isUnderline` -> czy tekst ma byc podkreślony (domyślnie tekst jest podkreślony gdy nie zmienimy tego w stylach globalnych)
+- `hover` -> właściwości które możemy nadać gdy najedziemy na link myszką
+  - `bgColor` -> kolor tła
+  - `fontWeight` -> grubość czcionki
+  - `radius` -> zaokrąglenie rogów
+  - `isUnderline` -> czy tekst ma być podkreslony
+  - `border` -> obramowanie linku
+  - `textShadow` -> cień tekstu
+- `fontWeight` -> grubość czcionki
+- `isItalic` -> czy tekst ma być pochylony
+- `padding` -> paddingi
+- `border` -> obramowanie linku
+- `bgColor` -> tło linku
+- `transition` -> czas przejścia stanu
+- `radius` -> zaokrąglenia rogów
+- `textalign` -> pozycja tekstu (left, center, right)
+- `textShadow` -> cień tekstu
+
+## Przykładowy sposób użycia:
+
+```
+<LinkComponent
+  href="http://www.google.pl"
+  text="Link"
+  width="10%"
+  fontFamily="Verdana, sans-serif"
+  fontColor="#567567"
+  isUppercase
+  fontWeight={700}
+  isItalic
+  padding="10px 30px"
+  transition={0.4}
+  border="2px solid blue"
+  textAlign="center"
+  radius="30px 5px 10px 20px"
+  bgColor="#777"
+  textShadow="0 0 3px rgba(0,0,0,1)"
+  hover={{
+    bgColor: "#CCC",
+    border: "1px solid red",
+    radius: "2px 5px 8px 30px",
+    isUnderline: true,
+    fontWeight: 400,
+    textShadow: "0 0 20px red",
+  }}
+/>
 ```
 
 ---
