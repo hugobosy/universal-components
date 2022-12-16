@@ -2,6 +2,7 @@ import React from "react";
 import { ButtonComponent } from "./components/button/Button.components";
 import { ParallaxComponent } from "./components/parallax/Parallax.component";
 import "./App.css";
+import { LinkComponent } from "./components/link/Link.component";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -40,6 +41,21 @@ function App() {
           <h1>Parallax</h1>
         </div>
       </ParallaxComponent>
+      <LinkComponent
+        href="http://www.google.pl"
+        text="Link"
+        width="10%"
+        fontFamily="Verdana, sans-serif"
+        fontColor="#567567"
+        isUppercase
+        fontBold={700}
+        isItalic
+        padding="10px 30px"
+        transition={0.4}
+        border="2px solid blue"
+        textAlign="center"
+        radius="30px 5px 10px 20px"
+      />
     </div>
   );
 }
