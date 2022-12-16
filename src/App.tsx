@@ -5,7 +5,12 @@ import "./App.css";
 import { LinkComponent } from "./components/link/Link.component";
 import { SocialsComponent } from "./components/socials/Socials.component";
 import useMediaQuery from "./helpers/hooks/media-query";
-import { FaFacebookF } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -78,9 +83,18 @@ function App() {
           icon: <FaFacebookF />,
           href: "http://facebook.com",
         }}
-        // twitter
-        // instagram
-        // linkedin
+        twitter={{
+          icon: <FaTwitter />,
+          href: "http://twitter.com",
+        }}
+        instagram={{
+          icon: <FaInstagram />,
+          href: "http://instagram.com",
+        }}
+        linkedin={{
+          icon: <FaLinkedinIn />,
+          href: "http://linkedin.com",
+        }}
         size={media ? 25 : 15}
       />
     </div>
