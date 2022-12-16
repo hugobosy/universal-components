@@ -3,6 +3,9 @@ import { ParallaxTypes } from "./Parallax.types";
 
 export const Parallax = styled.div<Partial<ParallaxTypes>>`
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   ${({ image }) =>
     image &&
     css`
