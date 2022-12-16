@@ -2,15 +2,14 @@ import React from "react";
 import { Socials } from "./Socials.styles";
 import { SocialsTypes } from "./Socials.types";
 import {
-  FaFacebook,
   FaFacebookF,
   FaInstagram,
-  FaLinkedin,
   FaLinkedinIn,
   FaPinterest,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { handleClickSocialIcon } from "./Socials.utils";
 
 export const SocialsComponent: React.FC<SocialsTypes> = ({
   facebook,
@@ -23,12 +22,42 @@ export const SocialsComponent: React.FC<SocialsTypes> = ({
 }) => {
   return (
     <Socials>
-      {facebook && <FaFacebookF size={size} />}
-      {twitter && <FaTwitter size={size} />}
-      {instagram && <FaInstagram size={size} />}
-      {linkedin && <FaLinkedinIn size={size} />}
-      {pinterest && <FaPinterest size={size} />}
-      {youtube && <FaYoutube size={size} />}
+      {facebook && (
+        <FaFacebookF
+          size={size}
+          onClick={() => handleClickSocialIcon(facebook.href)}
+        />
+      )}
+      {twitter && (
+        <FaTwitter
+          size={size}
+          onClick={() => handleClickSocialIcon(twitter.href)}
+        />
+      )}
+      {instagram && (
+        <FaInstagram
+          size={size}
+          onClick={() => handleClickSocialIcon(instagram.href)}
+        />
+      )}
+      {linkedin && (
+        <FaLinkedinIn
+          size={size}
+          onClick={() => handleClickSocialIcon(linkedin.href)}
+        />
+      )}
+      {pinterest && (
+        <FaPinterest
+          size={size}
+          onClick={() => handleClickSocialIcon(pinterest.href)}
+        />
+      )}
+      {youtube && (
+        <FaYoutube
+          size={size}
+          onClick={() => handleClickSocialIcon(youtube.href)}
+        />
+      )}
     </Socials>
   );
 };

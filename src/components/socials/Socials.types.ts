@@ -1,9 +1,13 @@
+interface Social {
+  icon: JSX.Element;
+  href: string;
+}
 export interface SocialsTypes {
-  facebook?: boolean;
-  twitter?: boolean;
-  instagram?: boolean;
-  linkedin?: boolean;
-  pinterest?: boolean;
-  youtube?: boolean;
+  facebook?: Social;
+  twitter?: Social;
+  instagram?: Social;
+  linkedin?: Social;
+  pinterest?: Social;
+  youtube?: Social;
   size?: number;
 }
