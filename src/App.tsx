@@ -104,7 +104,9 @@ function App() {
         links={[
           { name: "Strona główna", link: "home.html" },
           { name: "Produkty", link: "products.html" },
+          { name: "Kontakt", link: "contact.html" },
         ]}
+        gap="20px"
       />
     </div>
   );
