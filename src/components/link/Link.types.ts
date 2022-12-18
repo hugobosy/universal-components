@@ -14,7 +14,6 @@ export interface LinkTypes {
   text: string;
   width?: string;
   fontFamily?: string;
-  color?: string;
   isUppercase?: boolean;
   isUnderline?: boolean;
   hover?: Hover;
@@ -27,4 +26,5 @@ export interface LinkTypes {
   radius?: string;
   textAlign?: Align;
   textShadow?: string;
+  color?: string;
 }

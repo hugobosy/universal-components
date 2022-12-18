@@ -28,11 +28,6 @@ export const Link = styled.a<Partial<LinkTypes>>`
     css`
       font-family: ${fontFamily};
     `};
-  ${({ color }) =>
-    color &&
-    css`
-      color: ${color};
-    `};
   ${({ isUppercase }) =>
     isUppercase &&
     css`
@@ -83,6 +78,11 @@ export const Link = styled.a<Partial<LinkTypes>>`
     css`
       text-shadow: ${textShadow};
     `};
+  ${({ color }) =>
+    color &&
+    css`
+      color: ${color};
+    `}
   ${({ hover }) =>
     hover &&
     css`
