@@ -108,6 +108,7 @@ function App() {
         ]}
         gap="20px"
         position="fixed"
+        hover={{ fontWeight: 600 }}
       />
     </div>
   );

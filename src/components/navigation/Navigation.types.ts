@@ -5,7 +5,14 @@ interface Links {
 
 type Position = "relative" | "absolute" | "fixed";
 
-interface Hover {}
+interface Hover {
+  bgColor?: string;
+  fontWeight?: number;
+  radius?: string;
+  isUnderline?: boolean;
+  border?: string;
+  textShadow?: string;
+}
 export interface NavigationTypes {
   position?: Position;
   links: Links[];
