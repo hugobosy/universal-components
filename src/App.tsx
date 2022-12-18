@@ -11,6 +11,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import { NavigationComponent } from "./components/navigation/Navigation.component";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -98,6 +99,17 @@ function App() {
         size={media ? 25 : 15}
         hover={{ fill: "gold" }}
         transition={0.4}
+      />
+      <NavigationComponent
+        links={[
+          { name: "Strona główna", link: "home.html" },
+          { name: "Produkty", link: "products.html" },
+          { name: "Kontakt", link: "contact.html" },
+        ]}
+        gap="20px"
+        position="fixed"
+        hover={{ fontWeight: 600 }}
+        color="#BCC222"
       />
     </div>
   );
