@@ -58,7 +58,7 @@ function App() {
         text="Link"
         width="10%"
         fontFamily="Verdana, sans-serif"
-        fontColor="#567567"
+        color="#567567"
         isUppercase
         fontWeight={700}
         isItalic

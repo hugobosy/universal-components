@@ -28,10 +28,10 @@ export const Link = styled.a<Partial<LinkTypes>>`
     css`
       font-family: ${fontFamily};
     `};
-  ${({ fontColor }) =>
-    fontColor &&
+  ${({ color }) =>
+    color &&
     css`
-      color: ${fontColor};
+      color: ${color};
     `};
   ${({ isUppercase }) =>
     isUppercase &&

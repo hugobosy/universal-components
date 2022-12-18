@@ -9,7 +9,6 @@ export const NavigationComponent: React.FC<NavigationTypes> = ({
   isColumn,
   gap,
   fontFamily,
-  fontColor,
   hover,
   transition,
   color,
@@ -22,7 +21,6 @@ export const NavigationComponent: React.FC<NavigationTypes> = ({
             href={item.link}
             text={item.name}
             fontFamily={fontFamily}
-            fontColor={fontColor}
             hover={hover}
             transition={transition}
             color={color}
