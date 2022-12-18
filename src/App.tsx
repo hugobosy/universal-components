@@ -107,6 +107,7 @@ function App() {
           { name: "Kontakt", link: "contact.html" },
         ]}
         gap="20px"
+        position="fixed"
       />
     </div>
   );

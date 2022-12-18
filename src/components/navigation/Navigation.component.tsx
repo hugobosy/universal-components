@@ -4,6 +4,7 @@ import { Navigation } from "./Navigation.styles";
 import { LinkComponent } from "../link/Link.component";
 
 export const NavigationComponent: React.FC<NavigationTypes> = ({
+  position,
   links,
   isColumn,
   gap,
@@ -13,7 +14,7 @@ export const NavigationComponent: React.FC<NavigationTypes> = ({
   transition,
 }) => {
   return (
-    <Navigation isColumn={isColumn} gap={gap}>
+    <Navigation position={position} isColumn={isColumn} gap={gap}>
       {links.map((item) => (
         <li>
           <LinkComponent

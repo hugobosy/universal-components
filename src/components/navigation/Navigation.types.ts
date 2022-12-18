@@ -3,8 +3,11 @@ interface Links {
   link: string;
 }
 
+type Position = "relative" | "absolute" | "fixed";
+
 interface Hover {}
 export interface NavigationTypes {
+  position?: Position;
   links: Links[];
   isColumn?: boolean;
   gap?: string;
