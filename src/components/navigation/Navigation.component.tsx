@@ -12,6 +12,7 @@ export const NavigationComponent: React.FC<NavigationTypes> = ({
   fontColor,
   hover,
   transition,
+  color,
 }) => {
   return (
     <Navigation position={position} isColumn={isColumn} gap={gap}>
@@ -24,6 +25,7 @@ export const NavigationComponent: React.FC<NavigationTypes> = ({
             fontColor={fontColor}
             hover={hover}
             transition={transition}
+            color={color}
           />
         </li>
       ))}

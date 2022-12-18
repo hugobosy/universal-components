@@ -25,7 +25,12 @@ export const Navigation = styled.ul<Partial<NavigationTypes>>`
     gap &&
     css`
       gap: ${gap};
-    `}
+    `};
+  ${({ color }) =>
+    color &&
+    css`
+      color: ${color};
+    `};
   ${({ hover }) =>
     hover &&
     css`

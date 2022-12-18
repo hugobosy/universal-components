@@ -22,4 +22,5 @@ export interface NavigationTypes {
   fontColor?: string;
   hover?: Hover;
   transition?: number;
+  color: string;
 }
