@@ -57,7 +57,6 @@ function App() {
         text="Link"
         width="10%"
         fontFamily="Verdana, sans-serif"
-        fontColor="#567567"
         isUppercase
         fontWeight={700}
         isItalic
@@ -68,6 +67,7 @@ function App() {
         radius="30px 5px 10px 20px"
         bgColor="#777"
         textShadow="0 0 3px rgba(0,0,0,1)"
+        color="#BCC456"
         hover={{
           bgColor: "#CCC",
           border: "1px solid red",

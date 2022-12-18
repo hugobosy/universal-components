@@ -7,7 +7,6 @@ export const LinkComponent: React.FC<LinkTypes> = ({
   text,
   width,
   fontFamily,
-  fontColor,
   isUppercase,
   isUnderline,
   hover,
@@ -20,13 +19,13 @@ export const LinkComponent: React.FC<LinkTypes> = ({
   textAlign,
   radius,
   textShadow,
+  color,
 }) => {
   return (
     <Link
       href={href}
       width={width}
       fontFamily={fontFamily}
-      fontColor={fontColor}
       isUppercase={isUppercase}
       isUnderline={isUnderline}
       hover={hover}
@@ -39,6 +38,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
       textAlign={textAlign}
       radius={radius}
       textShadow={textShadow}
+      color={color}
     >
       {text}
     </Link>
