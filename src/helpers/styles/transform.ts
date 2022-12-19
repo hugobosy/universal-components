@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-export const transforms = {
+export const Transforms = {
   uppercase: css`
     text-transform: uppercase;
   `,

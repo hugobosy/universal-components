@@ -1,4 +1,4 @@
-import { Align } from "../../types/text";
+import { Align, Decoration, Transform } from "../../types/text";
 
 interface Hover {
   bgColor?: string;
@@ -14,8 +14,8 @@ export interface LinkTypes {
   text: string;
   width?: string;
   fontFamily?: string;
-  isUppercase?: boolean;
-  isUnderline?: boolean;
+  transform?: Transform;
+  decoration?: Decoration;
   hover?: Hover;
   fontWeight?: number;
   isItalic?: boolean;

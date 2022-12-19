@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-export const displays = {
+export const Displays = {
   block: css`
     display: block;
   `,

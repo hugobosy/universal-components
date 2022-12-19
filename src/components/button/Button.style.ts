@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
 import { ButtonTypes } from "./Button.types";
-import { displays } from "../../helpers/styles/display";
-import { transforms } from "../../helpers/styles/transform";
+import { Displays } from "../../helpers/styles/display";
+import { Transforms } from "../../helpers/styles/transform";
 
 export const Button = styled.button<Partial<ButtonTypes>>`
   cursor: pointer;
-  ${({ display }) => display && displays[display]};
-  ${({ transform }) => transform && transforms[transform]}
+  ${({ display }) => display && Displays[display]};
+  ${({ transform }) => transform && Transforms[transform]}
 
   ${({ bgColor }) =>
     bgColor &&

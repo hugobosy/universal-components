@@ -58,9 +58,9 @@ function App() {
         text="Link"
         width="10%"
         fontFamily="Verdana, sans-serif"
-        isUppercase
+        transform="uppercase"
         fontWeight={700}
-        isItalic
+        decoration="overline underline"
         padding="10px 30px"
         transition={0.4}
         border="2px solid blue"
