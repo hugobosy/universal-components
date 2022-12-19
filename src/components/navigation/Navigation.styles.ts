@@ -1,20 +1,10 @@
 import styled, { css } from "styled-components";
 import { NavigationTypes } from "./Navigation.types";
+import { Positions } from "../../helpers/styles/position";
 
-const positions = {
-  relative: css`
-    position: relative;
-  `,
-  absolute: css`
-    position: absolute;
-  `,
-  fixed: css`
-    position: fixed;
-  `,
-};
 export const Navigation = styled.ul<Partial<NavigationTypes>>`
   display: flex;
-  ${({ position }) => position && positions[position]}
+  ${({ position }) => position && Positions[position]}
   ${({ isColumn }) =>
     isColumn &&
     css`
