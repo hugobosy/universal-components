@@ -1,23 +1,15 @@
 import styled, { css } from "styled-components";
 import { LinkTypes } from "./Link.types";
-import { text } from "stream/consumers";
-
-const Aligns = {
-  left: css`
-    text-align: left;
-  `,
-  center: css`
-    text-align: center;
-  `,
-  right: css`
-    text-align: right;
-  `,
-};
+import { Aligns } from "../../helpers/styles/align";
+import { Transforms } from "../../helpers/styles/transform";
+import { Decorations } from "../../helpers/styles/decoration";
 
 export const Link = styled.a<Partial<LinkTypes>>`
   display: block;
   cursor: pointer;
   ${({ textAlign }) => textAlign && Aligns[textAlign]};
+  ${({ transform }) => transform && Transforms[transform]};
+  ${({ decoration }) => decoration && Decorations[decoration]};
   ${({ width }) =>
     width &&
     css`
@@ -27,16 +19,6 @@ export const Link = styled.a<Partial<LinkTypes>>`
     fontFamily &&
     css`
       font-family: ${fontFamily};
-    `};
-  ${({ isUppercase }) =>
-    isUppercase &&
-    css`
-      text-transform: uppercase;
-    `};
-  ${({ isUnderline }) =>
-    isUnderline &&
-    css`
-      text-decoration: underline;
     `};
   ${({ fontWeight }) =>
     fontWeight &&

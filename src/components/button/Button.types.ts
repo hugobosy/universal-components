@@ -1,4 +1,5 @@
-type Display = "block" | "flex" | "grid" | "none";
+import { Display } from "../../types/display";
+import { Transform } from "../../types/text";
 
 interface Hover {
   bgColor?: string;
@@ -14,7 +15,7 @@ export interface ButtonTypes {
   fontFamily?: string;
   fontColor?: string;
   border?: string;
-  isUppercase?: boolean;
+  transform?: Transform;
   display?: Display;
   padding?: string;
   radius?: string;

@@ -29,7 +29,7 @@ function App() {
         fontFamily="Verdana, sans-serif"
         fontColor="#CCC"
         border="none"
-        isUppercase
+        transform="uppercase"
         padding="10px 30px"
         radius="8px 3px 18px 29px"
         shadow="2px 2px 5px 0px rgba(0,0,0,.5)"
@@ -58,9 +58,9 @@ function App() {
         text="Link"
         width="10%"
         fontFamily="Verdana, sans-serif"
-        isUppercase
+        transform="uppercase"
         fontWeight={700}
-        isItalic
+        decoration="overline underline"
         padding="10px 30px"
         transition={0.4}
         border="2px solid blue"

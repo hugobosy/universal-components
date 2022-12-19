@@ -9,7 +9,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   bgColor,
   display,
   border,
-  isUppercase,
+  transform,
   padding,
   radius,
   shadow,
@@ -24,7 +24,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
       fontColor={fontColor}
       bgColor={bgColor}
       border={border}
-      isUppercase={isUppercase}
+      transform={transform}
       padding={padding}
       radius={radius}
       shadow={shadow}
