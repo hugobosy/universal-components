@@ -19,7 +19,6 @@ export interface NavigationTypes {
   isColumn?: boolean;
   gap?: string;
   fontFamily?: string;
-  fontColor?: string;
   hover?: Hover;
   transition?: number;
   color: string;

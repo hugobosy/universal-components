@@ -110,6 +110,7 @@ function App() {
         position="fixed"
         hover={{ fontWeight: 600 }}
         color="#BCC222"
+        fontFamily="Verdana, sans-serif"
       />
     </div>
   );
