@@ -1,24 +1,12 @@
 import styled, { css } from "styled-components";
 import { ButtonTypes } from "./Button.types";
-
-const displays = {
-  block: css`
-    display: block;
-  `,
-  flex: css`
-    display: flex;
-  `,
-  grid: css`
-    display: grid;
-  `,
-  none: css`
-    display: none;
-  `,
-};
+import { displays } from "../../helpers/styles/display";
+import { transforms } from "../../helpers/styles/transform";
 
 export const Button = styled.button<Partial<ButtonTypes>>`
   cursor: pointer;
   ${({ display }) => display && displays[display]};
+  ${({ transform }) => transform && transforms[transform]}
 
   ${({ bgColor }) =>
     bgColor &&
@@ -42,12 +30,6 @@ export const Button = styled.button<Partial<ButtonTypes>>`
     border &&
     css`
       border: ${border};
-    `};
-
-  ${({ isUppercase }) =>
-    isUppercase &&
-    css`
-      text-transform: uppercase;
     `};
 
   ${({ padding }) =>

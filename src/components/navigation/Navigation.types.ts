@@ -1,9 +1,9 @@
+import { Position } from "../../types/position";
+
 interface Links {
   name: string;
   link: string;
 }
-
-type Position = "relative" | "absolute" | "fixed";
 
 interface Hover {
   bgColor?: string;

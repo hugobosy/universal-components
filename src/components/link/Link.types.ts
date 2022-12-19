@@ -1,4 +1,4 @@
-type Align = "left" | "center" | "right";
+import { Align } from "../../types/text";
 
 interface Hover {
   bgColor?: string;
