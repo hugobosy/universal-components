@@ -15,6 +15,7 @@ interface Hover {
 }
 export interface NavigationTypes {
   position?: Position;
+  positionBlock?: Position;
   links: Links[];
   isColumn?: boolean;
   gap?: string;

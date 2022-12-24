@@ -3,6 +3,7 @@ import { LinkTypes } from "./Link.types";
 import { Aligns } from "../../helpers/styles/align";
 import { Transforms } from "../../helpers/styles/transform";
 import { Decorations } from "../../helpers/styles/decoration";
+import { Positions } from "../../helpers/styles/position";
 
 export const Link = styled.a<Partial<LinkTypes>>`
   display: block;
@@ -10,6 +11,7 @@ export const Link = styled.a<Partial<LinkTypes>>`
   ${({ textAlign }) => textAlign && Aligns[textAlign]};
   ${({ transform }) => transform && Transforms[transform]};
   ${({ decoration }) => decoration && Decorations[decoration]};
+  ${({ position }) => position && Positions[position]};
   ${({ width }) =>
     width &&
     css`
@@ -74,10 +76,29 @@ export const Link = styled.a<Partial<LinkTypes>>`
         border-radius: ${hover.radius};
         ${hover.isUnderline &&
         css`
-          text-decoration: underline;
+          &::before {
+            left: 0;
+          }
         `};
         border: ${hover.border};
         text-shadow: ${hover.textShadow};
       }
     `};
+  ${({ hover, color }) =>
+    hover &&
+    color &&
+    hover.isUnderline &&
+    css`
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 1px;
+        background-color: ${color};
+        transition: 0.4s;
+      }
+    `}
 `;

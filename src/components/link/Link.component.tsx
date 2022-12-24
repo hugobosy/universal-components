@@ -20,6 +20,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
   radius,
   textShadow,
   color,
+  position,
 }) => {
   return (
     <Link
@@ -39,6 +40,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
       radius={radius}
       textShadow={textShadow}
       color={color}
+      position={position}
     >
       {text}
     </Link>

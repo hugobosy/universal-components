@@ -1,4 +1,5 @@
 import { Align, Decoration, Transform } from "../../types/text";
+import { Position } from "../../types/position";
 
 interface Hover {
   bgColor?: string;
@@ -27,4 +28,5 @@ export interface LinkTypes {
   textAlign?: Align;
   textShadow?: string;
   color?: string;
+  position?: Position;
 }

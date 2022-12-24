@@ -106,9 +106,11 @@ function App() {
           { name: "Produkty", link: "products.html" },
           { name: "Kontakt", link: "contact.html" },
         ]}
+        transition={0.4}
         gap="20px"
-        position="fixed"
-        hover={{ fontWeight: 600 }}
+        position="relative"
+        positionBlock="fixed"
+        hover={{ isUnderline: true }}
         color="#BCC222"
         fontFamily="Verdana, sans-serif"
       />

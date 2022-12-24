@@ -5,6 +5,7 @@ import { LinkComponent } from "../link/Link.component";
 
 export const NavigationComponent: React.FC<NavigationTypes> = ({
   position,
+  positionBlock,
   links,
   isColumn,
   gap,
@@ -14,9 +15,9 @@ export const NavigationComponent: React.FC<NavigationTypes> = ({
   color,
 }) => {
   return (
-    <Navigation position={position} isColumn={isColumn} gap={gap}>
+    <Navigation positionBlock={positionBlock} isColumn={isColumn} gap={gap}>
       {links.map((item) => (
-        <li>
+        <li key={item.name}>
           <LinkComponent
             href={item.link}
             text={item.name}
@@ -24,6 +25,7 @@ export const NavigationComponent: React.FC<NavigationTypes> = ({
             hover={hover}
             transition={transition}
             color={color}
+            position={position}
           />
         </li>
       ))}
