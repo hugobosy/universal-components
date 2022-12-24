@@ -86,7 +86,6 @@ export const Link = styled.a<Partial<LinkTypes>>`
     `};
   ${({ hover, color }) =>
     hover &&
-    color &&
     hover.isUnderline &&
     css`
       overflow: hidden;
