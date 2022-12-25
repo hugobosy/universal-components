@@ -12,6 +12,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { NavigationComponent } from "./components/navigation/Navigation.component";
+import { AccordionComponent } from "./components/accordion/Accordion.component";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -109,10 +110,36 @@ function App() {
         transition={0.4}
         gap="20px"
         position="relative"
-        positionBlock="fixed"
+        positionBlock="static"
         hover={{ isUnderline: true }}
         color="#BCC222"
         fontFamily="Verdana, sans-serif"
+      />
+      <AccordionComponent
+        accordionItems={[
+          {
+            header: "Title1",
+            content: <h1>Witaj</h1>,
+          },
+          {
+            header: "Title2",
+            content:
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          },
+          {
+            header: "Title3",
+            content:
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          },
+        ]}
+        maxWidth="480px"
+        heightContent="180px"
+        bgHeader="#473829"
+        padding="10px"
+        margin="10px 0"
+        customCss="font-family: verdana; color: red; font-size: 3rem; font-weight: bold; border: 1px solid black; border-radius: 10px;"
+        customHeader="color: green; font-size: 12px;"
+        customContent="color: black; font-size: 10px; font-weight: normal;"
       />
     </div>
   );
