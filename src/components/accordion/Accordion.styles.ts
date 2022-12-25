@@ -35,7 +35,11 @@ export const Header = styled.div<Partial<AccordionTypes>>`
     css`
       background-color: ${bgHeader};
     `}
-  //color: #fff;
+  ${({ customHeader }) =>
+    customHeader &&
+    css`
+      ${customHeader}
+    `}
   p,
   span {
     cursor: pointer;
@@ -50,6 +54,11 @@ export const Content = styled.p<Partial<AccordionTypes>>`
     padding &&
     css`
       padding: 0 ${padding};
+    `}
+  ${({ customContent }) =>
+    customContent &&
+    css`
+      ${customContent}
     `}
   &.active {
     ${({ heightContent }) =>

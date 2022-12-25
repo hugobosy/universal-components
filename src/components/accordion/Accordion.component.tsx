@@ -15,6 +15,8 @@ export const AccordionComponent: React.FC<AccordionTypes> = ({
   fontSize,
   color,
   customCss,
+  customHeader,
+  customContent,
 }) => {
   const [show, setShow] = useState<boolean | null | number>(false);
 
@@ -40,6 +42,7 @@ export const AccordionComponent: React.FC<AccordionTypes> = ({
             fontWeight={fontWeight}
             fontFamily={fontFamily}
             fontSize={fontSize}
+            customHeader={customHeader}
           >
             <p>{item.header}</p>
             <span>{show === index ? <FaChevronUp /> : <FaChevronDown />}</span>
@@ -49,6 +52,7 @@ export const AccordionComponent: React.FC<AccordionTypes> = ({
             heightContent={heightContent}
             padding={padding}
             fontSize={fontSize}
+            customContent={customContent}
           >
             {item.content}
           </Content>

@@ -16,6 +16,8 @@ export interface AccordionTypes {
   fontSize?: string;
   color?: string;
   customCss?: string;
+  customHeader?: string;
+  customContent?: string;
   show?: any;
   index?: any;
 }
