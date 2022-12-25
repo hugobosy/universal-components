@@ -6,6 +6,11 @@ interface AccordionItems {
 }
 export interface AccordionTypes {
   accordionItems: AccordionItems[];
+  maxWidth?: string;
+  heightContent?: string;
+  bgHeader?: string;
+  margin?: string;
+  padding?: string;
   show?: any;
   index?: any;
 }

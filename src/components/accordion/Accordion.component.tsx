@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import { AccordionTypes } from "./Accordion.types";
 import { AccordionItem, Content, Header } from "./Accordion.styles";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export const AccordionComponent: React.FC<AccordionTypes> = ({
   accordionItems,
+  maxWidth,
+  heightContent,
+  bgHeader,
+  margin,
+  padding,
 }) => {
   const [show, setShow] = useState<boolean | null | number>(false);
 
@@ -16,12 +22,20 @@ export const AccordionComponent: React.FC<AccordionTypes> = ({
   return (
     <>
       {accordionItems.map((item, index) => (
-        <AccordionItem key={index}>
-          <Header onClick={() => toggle(index)}>
+        <AccordionItem key={index} maxWidth={maxWidth} margin={margin}>
+          <Header
+            onClick={() => toggle(index)}
+            bgHeader={bgHeader}
+            padding={padding}
+          >
             <p>{item.header}</p>
-            <span>X</span>
+            <span>{show === index ? <FaChevronUp /> : <FaChevronDown />}</span>
           </Header>
-          <Content className={show === index ? "active" : ""}>
+          <Content
+            className={show === index ? "active" : ""}
+            heightContent={heightContent}
+            padding={padding}
+          >
             {item.content}
           </Content>
         </AccordionItem>
