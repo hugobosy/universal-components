@@ -10,6 +10,10 @@ export const AccordionComponent: React.FC<AccordionTypes> = ({
   bgHeader,
   margin,
   padding,
+  fontWeight,
+  fontFamily,
+  fontSize,
+  color,
 }) => {
   const [show, setShow] = useState<boolean | null | number>(false);
 
