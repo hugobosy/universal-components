@@ -8,6 +8,8 @@
 2. [Parallax](#Parallax)
 3. [Link](#Link)
 4. [Socials](#Socials)
+5. [Navigation](#Navigation)
+6. [Accordion](#Accordion)
 
 ---
 
@@ -34,7 +36,7 @@
     - `shadow` -> zmiana cieni
 - `onClick` -> obsługa zdarzenia click
 
-## Przykładowy sposób użycia:
+### Przykładowy sposób użycia:
 
 ```
 <ButtonComponent
@@ -73,7 +75,7 @@
     - `opacity` -> przezroczystość koloru nakładki
 - `image` -> obrazek tła
 
-## Przykładowy sposób użycia:
+### Przykładowy sposób użycia:
 
 ```
 <ParallaxComponent
@@ -118,7 +120,7 @@
 - `textalign` -> pozycja tekstu (left, center, right)
 - `textShadow` -> cień tekstu
 
-## Przykładowy sposób użycia:
+### Przykładowy sposób użycia:
 
 ```
 <LinkComponent
@@ -162,7 +164,7 @@
 - `hover` -> stan przejścia
   - `fill` -> zmiana koloru ikony
 
-## Przykładowy sposób użycia:
+### Przykładowy sposób użycia:
 
 ```
 <SocialsComponent
@@ -186,6 +188,90 @@
   hover={{ fill: "gold" }}
   transition={0.4}
 />
+```
+
+---
+
+## Navigation
+
+> Właściwości, które posiada komponent:
+
+- `positionBlock` -> pozycjonowanie całego bloku nawiagacji - dostępne opcje pozycjonowania: `relative`, `absolute`, `fixed`, `sticky`, `static`
+- `position` -> pozycjonowanie pojedynczego linku - opcje te same co wyżej
+- `links` -> tutaj wstawiamy tablicę obiektów - patrz w przykładowy sposobie użycia
+- `isColumn`' -> czy nawigacja ma być pionowa
+- `gap` -> odległości pomiędzy linkami (w pionie i poziomie)
+- `fontFamily` -> rodzina fontów dla linku
+- `hover` -> efekt najechania na link myszką
+- `transition` -> animacja przejscia na efekt hover
+- `color` -> kolor czcionki
+
+### Przykładowy sposób użycia:
+
+```
+<NavigationComponent
+  links={[
+    { name: "Strona główna", link: "home.html" },
+    { name: "Produkty", link: "products.html" },
+    { name: "Kontakt", link: "contact.html" },
+  ]}
+  transition={0.4}
+  gap="20px"
+  position="relative"
+  positionBlock="static"
+  hover={{ isUnderline: true }}
+  color="#BCC222"
+  fontFamily="Verdana, sans-serif"
+/>
+```
+---
+
+## Accordion
+
+> Właściwości, które posiada komponent:
+
+- `accordionItems` -> tablica obiektów - patrz w sposób użycia
+- `maxWidth` -> maksymalna szerokość komponentu (width: 100%)
+- `heightContent` -> wysokość zawartości contentu
+- `bgHeader` -> tło nagłówka
+- `margin` -> margines komponentu
+- `padding` -> paddingi nagłówka i contentu (są takie same)
+- `fontWeight` -> grubość czcionki
+- `fontFamily` -> rodzina fontów
+- `fontSize` -> wielkość czcionki
+- `color` -> kolor czcionki
+- `customCss` -> niestandardowe style css dla całego komponentu
+- `customHeader` -> niestandardowe style dla nagłówka
+- `customContent` -> niestandardowe style dla contentu
+
+### Przykładowy sposób użycia:
+
+```
+<AccordionComponent
+  accordionItems={[
+    {
+      header: "Title1",
+      content: <h1>Witaj</h1>,
+    },
+    {
+      header: "Title2",
+      content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    },
+    {
+      header: "Title3",
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    },
+  ]}
+  maxWidth="480px"
+  heightContent="180px"
+  bgHeader="#473829"
+  padding="10px"
+  margin="10px 0"
+  customCss="font-family: verdana; color: red; font-size: 3rem; font-weight: bold; border: 1px solid black; border-radius: 10px;"
+  customHeader="color: green; font-size: 12px;"
+  customContent="color: black; font-size: 10px; font-weight: normal;"
 ```
 
 ---
