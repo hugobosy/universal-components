@@ -137,6 +137,7 @@ function App() {
         bgHeader="#473829"
         padding="10px"
         margin="10px 0"
+        customCss="font-family: verdana; color: red; font-size: 3rem; font-weight: bold"
       />
     </div>
   );

@@ -15,6 +15,7 @@ export interface AccordionTypes {
   fontWeight?: number;
   fontSize?: string;
   color?: string;
+  customCss?: string;
   show?: any;
   index?: any;
 }

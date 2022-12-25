@@ -15,6 +15,11 @@ export const AccordionItem = styled.div<Partial<AccordionTypes>>`
     css`
       margin: ${margin};
     `}
+  ${({ customCss }) =>
+    customCss &&
+    css`
+      ${customCss}
+    `}
 `;
 export const Header = styled.div<Partial<AccordionTypes>>`
   display: flex;
@@ -30,7 +35,7 @@ export const Header = styled.div<Partial<AccordionTypes>>`
     css`
       background-color: ${bgHeader};
     `}
-  color: #fff;
+  //color: #fff;
   p,
   span {
     cursor: pointer;
