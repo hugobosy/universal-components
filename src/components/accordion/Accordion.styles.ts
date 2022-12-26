@@ -15,6 +15,16 @@ export const AccordionItem = styled.div<Partial<AccordionTypes>>`
     css`
       margin: ${margin};
     `}
+  ${({ fontFamily }) =>
+    fontFamily &&
+    css`
+      font-family: ${fontFamily};
+    `}
+  ${({ color }) =>
+    color &&
+    css`
+      color: ${color};
+    `}
   ${({ customCss }) =>
     customCss &&
     css`
@@ -35,6 +45,16 @@ export const Header = styled.div<Partial<AccordionTypes>>`
     css`
       background-color: ${bgHeader};
     `}
+  ${({ fontSize }) =>
+    fontSize &&
+    css`
+      font-size: ${fontSize}rem;
+    `}
+  ${({ fontWeight }) =>
+    fontWeight &&
+    css`
+      font-weight: ${fontWeight};
+    `}
   ${({ customHeader }) =>
     customHeader &&
     css`
@@ -54,6 +74,11 @@ export const Content = styled.p<Partial<AccordionTypes>>`
     padding &&
     css`
       padding: 0 ${padding};
+    `}
+  ${({ fontSize }) =>
+    fontSize &&
+    css`
+      font-size: calc(${fontSize} * 0.6rem);
     `}
   ${({ customContent }) =>
     customContent &&

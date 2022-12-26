@@ -33,6 +33,8 @@ export const AccordionComponent: React.FC<AccordionTypes> = ({
           key={index}
           maxWidth={maxWidth}
           margin={margin}
+          fontFamily={fontFamily}
+          color={color}
           customCss={customCss}
         >
           <Header
@@ -40,7 +42,6 @@ export const AccordionComponent: React.FC<AccordionTypes> = ({
             bgHeader={bgHeader}
             padding={padding}
             fontWeight={fontWeight}
-            fontFamily={fontFamily}
             fontSize={fontSize}
             customHeader={customHeader}
           >

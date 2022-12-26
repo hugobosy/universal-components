@@ -13,7 +13,7 @@ export interface AccordionTypes {
   padding?: string;
   fontFamily?: string;
   fontWeight?: number;
-  fontSize?: string;
+  fontSize?: number;
   color?: string;
   customCss?: string;
   customHeader?: string;

@@ -137,9 +137,10 @@ function App() {
         bgHeader="#473829"
         padding="10px"
         margin="10px 0"
-        customCss="font-family: verdana; color: red; font-size: 3rem; font-weight: bold; border: 1px solid black; border-radius: 10px;"
-        customHeader="color: green; font-size: 12px;"
-        customContent="color: black; font-size: 10px; font-weight: normal;"
+        fontSize={1}
+        fontFamily="Verdana, sans-serif"
+        fontWeight={700}
+        color="green"
       />
     </div>
   );
