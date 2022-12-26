@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { NavigationComponent } from "./components/navigation/Navigation.component";
 import { AccordionComponent } from "./components/accordion/Accordion.component";
+import { CardOneComponent } from "./components/cards/steam-style/card-one/CardOne.component";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -142,6 +143,10 @@ function App() {
         fontWeight={700}
         color="green"
       />
+
+      <CardOneComponent>
+        <h1>Tytuł</h1>
+      </CardOneComponent>
     </div>
   );
 }
