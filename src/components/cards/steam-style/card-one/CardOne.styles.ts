@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { CardOneTypes } from "./CardOne.types";
 
-export const Card = styled.div`
+export const Card = styled.div<Partial<CardOneTypes>>`
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -16,22 +18,23 @@ export const Card = styled.div`
     img {
       transform: scale(1.1);
     }
+    > div {
+      bottom: 0;
+    }
+    &::before {
+      bottom: 0;
+    }
   }
 `;
-export const CardInfo = styled.div`
+export const CardInfo = styled.div<Partial<CardOneTypes>>`
+  position: absolute;
+  bottom: -35%;
+  left: 0;
   width: 100%;
-  height: 150px;
-  background-image: url("https://s1.gaming-cdn.com/images/products/1893/orig/dirt-4-pc-mac-spiel-steam-cover.jpg?v=1650458746");
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
+  height: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   transition: all 600ms ease-in-out;
-`;
-export const CardLayer = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: rgba(150, 150, 150, 0.8);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
 `;
 export const Description = styled.div``;

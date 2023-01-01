@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+
 export interface CardOneTypes {
-  children?: JSX.Element;
+  img?: string;
+  children?: ReactNode;
 }

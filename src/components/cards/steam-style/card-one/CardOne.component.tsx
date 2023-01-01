@@ -1,16 +1,10 @@
 import React from "react";
-import { Card, CardInfo, CardLayer, Description } from "./CardOne.styles";
+import { Card, CardInfo, Description } from "./CardOne.styles";
 import { CardOneTypes } from "./CardOne.types";
 
-export const CardOneComponent: React.FC<CardOneTypes> = ({ children }) => (
+export const CardOneComponent: React.FC<CardOneTypes> = ({ img, children }) => (
   <Card>
-    <img
-      src="https://s1.gaming-cdn.com/images/products/1893/orig/dirt-4-pc-mac-spiel-steam-cover.jpg?v=1650458746"
-      alt="ssdf"
-    />
-
-    <CardInfo>
-      <CardLayer>{children}</CardLayer>
-    </CardInfo>
+    <img src={img} alt="ssdf" />
+    <CardInfo>{children}</CardInfo>
   </Card>
 );

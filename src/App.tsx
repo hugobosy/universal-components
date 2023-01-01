@@ -144,8 +144,10 @@ function App() {
         color="green"
       />
 
-      <CardOneComponent>
-        <h1>Tytuł</h1>
+      <CardOneComponent img="https://s1.gaming-cdn.com/images/products/1893/orig/dirt-4-pc-mac-spiel-steam-cover.jpg?v=1650458746">
+        <div>
+          <h1>witaj</h1>
+        </div>
       </CardOneComponent>
     </div>
   );
