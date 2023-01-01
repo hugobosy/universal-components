@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardInfo, Description } from "./CardOne.styles";
+import { Card, CardInfo } from "./CardOne.styles";
 import { CardOneTypes } from "./CardOne.types";
 
 export const CardOneComponent: React.FC<CardOneTypes> = ({ img, children }) => (

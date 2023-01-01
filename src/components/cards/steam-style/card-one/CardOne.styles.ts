@@ -37,4 +37,3 @@ export const CardInfo = styled.div<Partial<CardOneTypes>>`
   transition: all 600ms ease-in-out;
   backdrop-filter: blur(10px);
 `;
-export const Description = styled.div``;
