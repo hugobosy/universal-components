@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { PaginationTypes } from "./Pagination.types";
+import { Data } from "./data/Data.component";
 
 export const PaginationComponent: React.FC<PaginationTypes> = ({ url }) => {
   const [data, setData] = useState([]);
@@ -19,5 +20,9 @@ export const PaginationComponent: React.FC<PaginationTypes> = ({ url }) => {
     fetchData();
   }, []);
 
-  return <h1>MyApp</h1>;
+  const indexOfLastPost = currentPage * dataPerPage;
+  const indexOfFirstPost = indexOfLastPost - dataPerPage;
+  const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
+  return <Data data={currentPosts} loading={loading} />;
 };
