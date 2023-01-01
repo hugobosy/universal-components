@@ -1,5 +1,7 @@
 import React from "react";
 import { PageNumbersTypes } from "./PageNumbers.types";
+import { ListItem, NumbersList } from "./PageNumbers.styles";
+import { Link } from "../../link/Link.styles";
 
 export const PageNumbers: React.FC<PageNumbersTypes> = ({
   totalPosts,
@@ -14,15 +16,21 @@ export const PageNumbers: React.FC<PageNumbersTypes> = ({
 
   return (
     <nav>
-      <ul>
+      <NumbersList>
         {pageNumbers.map((number) => (
-          <li key={number}>
-            <a onClick={() => paginate(number)} href="!#">
+          <ListItem key={number}>
+            <Link
+              padding="5px 8px"
+              border="1px solid black"
+              transition={0.4}
+              onClick={() => paginate(number)}
+              href="!#"
+            >
               {number}
-            </a>
-          </li>
+            </Link>
+          </ListItem>
         ))}
-      </ul>
+      </NumbersList>
     </nav>
   );
 };

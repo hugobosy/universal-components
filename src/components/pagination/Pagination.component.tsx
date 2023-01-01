@@ -3,22 +3,16 @@ import axios from "axios";
 import { PaginationTypes } from "./Pagination.types";
 import { Data } from "./data/Data.component";
 import { PageNumbers } from "./pageNumbers/PageNumbers.component";
+import { fetchData } from "./Pagination.utils";
 
 export const PaginationComponent: React.FC<PaginationTypes> = ({ url }) => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [dataPerPage] = useState(10);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [dataPerPage] = useState<number>(10);
 
   useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      const res = await axios.get(url);
-      setData(res.data);
-      setLoading(false);
-    };
-
-    fetchData();
+    fetchData(setLoading, setData, url);
   }, []);
 
   const indexOfLastPost = currentPage * dataPerPage;
