@@ -37,6 +37,11 @@ export const Link = styled.a<Partial<LinkTypes>>`
     css`
       padding: ${padding};
     `};
+  ${({ margin }) =>
+    margin &&
+    css`
+      margin: ${margin};
+    `};
   ${({ bgColor }) =>
     bgColor &&
     css`

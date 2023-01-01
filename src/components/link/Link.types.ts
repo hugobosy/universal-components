@@ -11,8 +11,8 @@ interface Hover {
 }
 
 export interface LinkTypes {
-  href: string;
-  text: string;
+  href?: string;
+  text?: string;
   width?: string;
   fontFamily?: string;
   transform?: Transform;
@@ -29,4 +29,5 @@ export interface LinkTypes {
   textShadow?: string;
   color?: string;
   position?: Position;
+  margin?: string;
 }
