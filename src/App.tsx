@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { NavigationComponent } from "./components/navigation/Navigation.component";
 import { AccordionComponent } from "./components/accordion/Accordion.component";
+import { CardOneComponent } from "./components/cards/steam-style/card-one/CardOne.component";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -142,6 +143,12 @@ function App() {
         fontWeight={700}
         color="green"
       />
+
+      <CardOneComponent img="https://s1.gaming-cdn.com/images/products/1893/orig/dirt-4-pc-mac-spiel-steam-cover.jpg?v=1650458746">
+        <div>
+          <h1>witaj</h1>
+        </div>
+      </CardOneComponent>
     </div>
   );
 }
