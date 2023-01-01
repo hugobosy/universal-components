@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { NavigationComponent } from "./components/navigation/Navigation.component";
 import { AccordionComponent } from "./components/accordion/Accordion.component";
+import { PaginationComponent } from "./components/pagination/Pagination.component";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -142,6 +143,8 @@ function App() {
         fontWeight={700}
         color="green"
       />
+
+      <PaginationComponent url="https://jsonplaceholder.typicode.com/posts" />
     </div>
   );
 }
