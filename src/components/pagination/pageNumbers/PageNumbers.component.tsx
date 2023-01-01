@@ -7,6 +7,25 @@ export const PageNumbers: React.FC<PageNumbersTypes> = ({
   totalPosts,
   postsPerPage,
   paginate,
+  style: {
+    textShadow,
+    textAlign,
+    bgColor,
+    color,
+    border,
+    radius,
+    padding,
+    fontWeight,
+    fontFamily,
+    transition,
+    isItalic,
+    transform,
+    hover,
+    width,
+    position,
+    decoration,
+    margin,
+  },
 }) => {
   const pageNumbers = [];
 
@@ -20,11 +39,25 @@ export const PageNumbers: React.FC<PageNumbersTypes> = ({
         {pageNumbers.map((number) => (
           <ListItem key={number}>
             <Link
-              padding="5px 8px"
-              border="1px solid black"
-              transition={0.4}
               onClick={() => paginate(number)}
               href="!#"
+              transition={transition}
+              hover={hover}
+              fontFamily={fontFamily}
+              fontWeight={fontWeight}
+              padding={padding}
+              color={color}
+              bgColor={bgColor}
+              border={border}
+              decoration={decoration}
+              position={position}
+              textShadow={textShadow}
+              textAlign={textAlign}
+              radius={radius}
+              isItalic={isItalic}
+              transform={transform}
+              width={width}
+              margin={margin}
             >
               {number}
             </Link>

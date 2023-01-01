@@ -144,7 +144,14 @@ function App() {
         color="green"
       />
 
-      <PaginationComponent url="https://jsonplaceholder.typicode.com/posts" />
+      <PaginationComponent
+        url="https://jsonplaceholder.typicode.com/posts"
+        style={{
+          border: "1px solid black",
+          padding: "10px",
+          margin: "5px 10px",
+        }}
+      />
     </div>
   );
 }

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { PaginationTypes } from "./Pagination.types";
 import { Data } from "./data/Data.component";
 import { PageNumbers } from "./pageNumbers/PageNumbers.component";
 import { fetchData } from "./Pagination.utils";
 
-export const PaginationComponent: React.FC<PaginationTypes> = ({ url }) => {
+export const PaginationComponent: React.FC<PaginationTypes> = ({
+  url,
+  style,
+}) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -28,6 +30,7 @@ export const PaginationComponent: React.FC<PaginationTypes> = ({ url }) => {
         totalPosts={data.length}
         postsPerPage={dataPerPage}
         paginate={paginate}
+        style={style}
       />
     </>
   );
