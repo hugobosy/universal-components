@@ -34,6 +34,7 @@
     - `padding` -> zmiana paddingów
     - `radius` -> zmiana zaokrągleń rogów
     - `shadow` -> zmiana cieni
+    
 - `onClick` -> obsługa zdarzenia click
 
 ### Przykładowy sposób użycia:
