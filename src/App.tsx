@@ -13,6 +13,8 @@ import {
 } from "react-icons/fa";
 import { NavigationComponent } from "./components/navigation/Navigation.component";
 import { AccordionComponent } from "./components/accordion/Accordion.component";
+import { PaginationComponent } from "./components/pagination/Pagination.component";
+import { Button } from "./components/button/Button.style";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -43,6 +45,18 @@ function App() {
           padding: "20px 50px",
         }}
         onClick={exampleHandleFunction}
+      />
+      <ButtonComponent
+        text="Button"
+        onClick={() => {}}
+        typeBtn="primary"
+        border="none"
+      />
+      <ButtonComponent
+        text="Button"
+        onClick={() => {}}
+        typeBtn="danger"
+        border="none"
       />
       <ParallaxComponent
         width="100%"
@@ -141,6 +155,15 @@ function App() {
         fontFamily="Verdana, sans-serif"
         fontWeight={700}
         color="green"
+      />
+
+      <PaginationComponent
+        url="https://jsonplaceholder.typicode.com/posts"
+        style={{
+          border: "1px solid black",
+          padding: "10px",
+          margin: "5px 10px",
+        }}
       />
     </div>
   );

@@ -3,10 +3,36 @@ import { ButtonTypes } from "./Button.types";
 import { Displays } from "../../helpers/styles/display";
 import { Transforms } from "../../helpers/styles/transform";
 
+const typeBtns = {
+  primary: css`
+    background-color: #2f8bf8;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: rgba(47, 139, 248, 0.75);
+    }
+  `,
+  danger: css`
+    background-color: #e83f3f;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: rgba(232, 63, 63, 0.75);
+    }
+  `,
+};
+
 export const Button = styled.button<Partial<ButtonTypes>>`
   cursor: pointer;
   ${({ display }) => display && Displays[display]};
-  ${({ transform }) => transform && Transforms[transform]}
+  ${({ transform }) => transform && Transforms[transform]};
+  ${({ typeBtn }) => typeBtn && typeBtns[typeBtn]};
 
   ${({ bgColor }) =>
     bgColor &&
