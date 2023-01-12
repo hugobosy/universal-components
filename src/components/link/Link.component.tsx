@@ -21,6 +21,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
   textShadow,
   color,
   position,
+  margin,
 }) => {
   return (
     <Link
@@ -41,6 +42,7 @@ export const LinkComponent: React.FC<LinkTypes> = ({
       textShadow={textShadow}
       color={color}
       position={position}
+      margin={margin}
     >
       {text}
     </Link>
