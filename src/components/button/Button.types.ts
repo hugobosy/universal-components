@@ -1,6 +1,8 @@
 import { Display } from "../../types/display";
 import { Transform } from "../../types/text";
 
+type TypeBtn = "primary" | "danger";
+
 interface Hover {
   bgColor?: string;
   fontColor?: string;
@@ -23,4 +25,5 @@ export interface ButtonTypes {
   transition?: number;
   hover?: Hover;
   onClick: () => void;
+  typeBtn?: TypeBtn;
 }
