@@ -17,6 +17,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   hover,
   onClick,
   typeBtn,
+  outline,
 }) => {
   return (
     <Button
@@ -33,6 +34,7 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
       hover={hover}
       onClick={onClick}
       typeBtn={typeBtn}
+      outline={outline}
     >
       {text}
     </Button>

@@ -104,6 +104,12 @@ export const Button = styled.button<Partial<ButtonTypes>>`
       transition: ${transition}s;
     `};
 
+  ${({ outline }) =>
+    outline &&
+    css`
+      outline: ${outline};
+    `}
+
   ${({ hover }) =>
     hover &&
     css`

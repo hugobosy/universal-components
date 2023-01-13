@@ -73,6 +73,7 @@ function App() {
         typeBtn="success"
         border="none"
         radius="50px"
+        outline="2px solid red"
       />
 
       <ParallaxComponent
