@@ -9,10 +9,14 @@ const typeBtns = {
     padding: 10px 30px;
     border-radius: 8px;
     color: #fff;
-    transition: 0.4s;
+    transition: 0.3s;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
 
     &:hover {
       background-color: rgba(47, 139, 248, 0.75);
+    }
+    &:active {
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
     }
   `,
   danger: css`
@@ -21,9 +25,13 @@ const typeBtns = {
     border-radius: 8px;
     color: #fff;
     transition: 0.4s;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
 
     &:hover {
       background-color: rgba(232, 63, 63, 0.75);
+    }
+    &:active {
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
     }
   `,
 };
