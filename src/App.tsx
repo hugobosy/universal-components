@@ -72,6 +72,7 @@ function App() {
         onClick={() => {}}
         typeBtn="success"
         border="none"
+        radius="50px"
       />
       <ParallaxComponent
         width="100%"
