@@ -5,14 +5,14 @@ import { Transforms } from "../../helpers/styles/transform";
 
 const typeBtns = {
   primary: css`
-    background-color: #2f8bf8;
+    background: linear-gradient(to bottom, #2f8bf8 0%, #0e4688 100%);
     padding: 10px 30px;
     border-radius: 8px;
     color: #fff;
     transition: 0.3s;
 
     &:hover {
-      background-color: rgba(47, 139, 248, 0.75);
+      opacity: 0.9;
     }
   `,
   danger: css`
