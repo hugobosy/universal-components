@@ -16,36 +16,36 @@ const typeBtns = {
     }
   `,
   danger: css`
-    background-color: #e83f3f;
+    background: linear-gradient(to bottom, #e83f3f 0%, #981d1d 100%);
     padding: 10px 30px;
     border-radius: 8px;
     color: #fff;
     transition: 0.4s;
 
     &:hover {
-      background-color: rgba(232, 63, 63, 0.75);
+      opacity: 0.9;
     }
   `,
   warning: css`
-    background-color: #e8c13f;
+    background: linear-gradient(to bottom, #e8c13f 0%, #807115 100%);
     padding: 10px 30px;
     border-radius: 8px;
     color: #fff;
     transition: 0.4s;
 
     &:hover {
-      background-color: rgba(232, 193, 63, 0.75);
+      opacity: 0.9;
     }
   `,
   success: css`
-    background-color: #2d8d0c;
+    background: linear-gradient(to bottom, #2d8d0c 0%, #20590c 100%);
     padding: 10px 30px;
     border-radius: 8px;
     color: #fff;
     transition: 0.4s;
 
     &:hover {
-      background-color: rgba(45, 141, 12, 0.75);
+      opacity: 0.9;
     }
   `,
 };
