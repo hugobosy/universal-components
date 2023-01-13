@@ -18,6 +18,8 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
   onClick,
   typeBtn,
   outline,
+  before,
+  after,
 }) => {
   return (
     <Button
@@ -35,6 +37,8 @@ export const ButtonComponent: React.FC<ButtonTypes> = ({
       onClick={onClick}
       typeBtn={typeBtn}
       outline={outline}
+      before={before}
+      after={after}
     >
       {text}
     </Button>

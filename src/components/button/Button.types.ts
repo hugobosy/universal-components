@@ -27,4 +27,6 @@ export interface ButtonTypes {
   onClick: () => void;
   typeBtn?: TypeBtn;
   outline?: string;
+  before?: string;
+  after?: string;
 }

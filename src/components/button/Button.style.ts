@@ -51,6 +51,7 @@ const typeBtns = {
 };
 
 export const Button = styled.button<Partial<ButtonTypes>>`
+  position: relative;
   cursor: pointer;
   ${({ display }) => display && Displays[display]};
   ${({ transform }) => transform && Transforms[transform]};
@@ -108,6 +109,25 @@ export const Button = styled.button<Partial<ButtonTypes>>`
     outline &&
     css`
       outline: ${outline};
+    `};
+
+  ${({ before }) =>
+    before &&
+    css`
+      &::before {
+        content: "";
+        position: absolute;
+        ${before}
+      }
+    `};
+  ${({ after }) =>
+    after &&
+    css`
+      &::before {
+        content: "";
+        position: absolute;
+        ${after}
+      }
     `}
 
   ${({ hover }) =>

@@ -48,6 +48,7 @@ function App() {
           padding: "20px 50px",
         }}
         onClick={exampleHandleFunction}
+        before="top: 0; left: 0; width: 100%; height: 2px; background-color: red;"
       />
       <ButtonComponent
         text="Button"
