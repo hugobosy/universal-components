@@ -1,7 +1,7 @@
 import { Display } from "../../types/display";
 import { Transform } from "../../types/text";
 
-type TypeBtn = "primary" | "danger";
+type TypeBtn = "primary" | "danger" | "warning" | "success";
 
 interface Hover {
   bgColor?: string;

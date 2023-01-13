@@ -10,13 +10,9 @@ const typeBtns = {
     border-radius: 8px;
     color: #fff;
     transition: 0.3s;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
 
     &:hover {
       background-color: rgba(47, 139, 248, 0.75);
-    }
-    &:active {
-      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
     }
   `,
   danger: css`
@@ -25,13 +21,31 @@ const typeBtns = {
     border-radius: 8px;
     color: #fff;
     transition: 0.4s;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
 
     &:hover {
       background-color: rgba(232, 63, 63, 0.75);
     }
-    &:active {
-      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  `,
+  warning: css`
+    background-color: #e8c13f;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: rgba(232, 193, 63, 0.75);
+    }
+  `,
+  success: css`
+    background-color: #2d8d0c;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: rgba(45, 141, 12, 0.75);
     }
   `,
 };

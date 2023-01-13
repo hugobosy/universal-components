@@ -19,7 +19,6 @@ import { CardOneComponent } from "./components/cards/steam-style/card-one/CardOn
 import { PaginationComponent } from "./components/pagination/Pagination.component";
 import { Button } from "./components/button/Button.style";
 
-
 function App() {
   const exampleHandleFunction = () => {
     console.log("Click");
@@ -60,6 +59,18 @@ function App() {
         text="Button"
         onClick={() => {}}
         typeBtn="danger"
+        border="none"
+      />
+      <ButtonComponent
+        text="Button"
+        onClick={() => {}}
+        typeBtn="warning"
+        border="none"
+      />
+      <ButtonComponent
+        text="Button"
+        onClick={() => {}}
+        typeBtn="success"
         border="none"
       />
       <ParallaxComponent
@@ -161,7 +172,6 @@ function App() {
         color="green"
       />
 
-
       <CardOneComponent img="https://s1.gaming-cdn.com/images/products/1893/orig/dirt-4-pc-mac-spiel-steam-cover.jpg?v=1650458746">
         <div>
           <h1>witaj</h1>
@@ -176,7 +186,6 @@ function App() {
           margin: "5px 10px",
         }}
       />
-
     </div>
   );
 }
