@@ -13,11 +13,8 @@ import {
 } from "react-icons/fa";
 import { NavigationComponent } from "./components/navigation/Navigation.component";
 import { AccordionComponent } from "./components/accordion/Accordion.component";
-
 import { CardOneComponent } from "./components/cards/steam-style/card-one/CardOne.component";
-
 import { PaginationComponent } from "./components/pagination/Pagination.component";
-import { Button } from "./components/button/Button.style";
 
 function App() {
   const exampleHandleFunction = () => {

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { CardOneTypes } from "./CardOne.types";
 
 export const Card = styled.div<Partial<CardOneTypes>>`
