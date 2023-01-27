@@ -13,11 +13,8 @@ import {
 } from "react-icons/fa";
 import { NavigationComponent } from "./components/navigation/Navigation.component";
 import { AccordionComponent } from "./components/accordion/Accordion.component";
-
 import { CardOneComponent } from "./components/cards/steam-style/card-one/CardOne.component";
-
 import { PaginationComponent } from "./components/pagination/Pagination.component";
-import { Button } from "./components/button/Button.style";
 
 function App() {
   const exampleHandleFunction = () => {
@@ -48,6 +45,7 @@ function App() {
           padding: "20px 50px",
         }}
         onClick={exampleHandleFunction}
+        before="top: 0; left: 0; width: 100%; height: 2px; background-color: red;"
       />
       <ButtonComponent
         text="Button"
@@ -72,7 +70,10 @@ function App() {
         onClick={() => {}}
         typeBtn="success"
         border="none"
+        radius="50px"
+        outline="2px solid red"
       />
+
       <ParallaxComponent
         width="100%"
         height="400px"

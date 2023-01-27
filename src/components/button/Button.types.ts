@@ -26,4 +26,7 @@ export interface ButtonTypes {
   hover?: Hover;
   onClick: () => void;
   typeBtn?: TypeBtn;
+  outline?: string;
+  before?: string;
+  after?: string;
 }
