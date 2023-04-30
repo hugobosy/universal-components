@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
-
 interface AccordionItems {
   header: string;
   content: string | JSX.Element;
